@@ -13,7 +13,7 @@ export default function AccountDeletionPage() {
                     <Link href="/" className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-2 text-sm font-medium">
                         <ArrowLeft className="w-4 h-4" /> Back
                     </Link>
-                    <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">BSK</span>
+                    <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Vibemate</span>
                     <div className="w-16"></div> {/* Spacer for centering */}
                 </div>
             </header>
@@ -25,10 +25,10 @@ export default function AccountDeletionPage() {
                         <ShieldX className="w-10 h-10" />
                     </div>
                     <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
-                        Delete Your BSK Account
+                        Delete Your Vibemate Account
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-                        We value your privacy. If you wish to permanently remove your account and data from the BSK platform, please follow the instructions below.
+                        We value your privacy. If you wish to permanently remove your account and data from the Vibemate platform, please follow the instructions below.
                     </p>
                 </div>
 
@@ -46,7 +46,7 @@ export default function AccountDeletionPage() {
                                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">1</div>
                                     <div>
                                         <h3 className="font-medium text-slate-900 dark:text-white mb-1">Log in to the App</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Open the BSK mobile application and sign in to your account.</p>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Open the Vibemate mobile application and sign in to your account.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
@@ -76,7 +76,7 @@ export default function AccountDeletionPage() {
                                 <p className="text-sm text-slate-500 dark:text-slate-400 flex items-start gap-2">
                                     <Mail className="w-4 h-4 mt-0.5 text-blue-500" />
                                     <span>
-                                        Can't access the app? You can arguably submit a manual request by emailing <a href="mailto:support@berkeleybanking.com" className="text-blue-600 hover:underline font-medium">bsktechltd@gmail.com</a> with the subject "BSK Account Deletion Request".
+                                        Can't access the app? You can arguably submit a manual request by emailing <a href="mailto:support@berkeleybanking.com" className="text-blue-600 hover:underline font-medium">bsktechltd@gmail.com</a> with the subject "Vibemate Account Deletion Request".
                                     </span>
                                 </p>
                             </div>
@@ -140,7 +140,7 @@ export default function AccountDeletionPage() {
             </main>
 
             <footer className="py-8 text-center text-slate-500 dark:text-slate-500 text-sm">
-                <p>&copy; {new Date().getFullYear()} BSK. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Vibemate. All rights reserved.</p>
             </footer>
         </div>
     );
