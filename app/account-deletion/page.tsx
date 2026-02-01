@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ShieldX, Database, Clock, ArrowLeft, Mail } from "lucide-react";
+import { ShieldX, Database, Clock, ArrowLeft, Mail, AlertTriangle, CheckCircle } from "lucide-react";
 
 export default function AccountDeletionPage() {
     return (
@@ -13,7 +13,7 @@ export default function AccountDeletionPage() {
                     <Link href="/" className="text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-2 text-sm font-medium">
                         <ArrowLeft className="w-4 h-4" /> Back
                     </Link>
-                    <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Vibemate</span>
+                    <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">StudentSpark</span>
                     <div className="w-16"></div> {/* Spacer for centering */}
                 </div>
             </header>
@@ -21,14 +21,14 @@ export default function AccountDeletionPage() {
             <main className="flex-grow max-w-3xl mx-auto px-4 sm:px-6 py-12 w-full">
 
                 <div className="text-center mb-10">
-                    <div className="inline-flex items-center justify-center p-4 bg-red-100 dark:bg-red-900/30 rounded-full mb-6 text-red-600 dark:text-red-400">
+                    <div className="inline-flex items-center justify-center p-4 bg-red-100 dark:bg-red-900/30 rounded-full mb-6 text-red-600 dark:text-red-400 shadow-sm">
                         <ShieldX className="w-10 h-10" />
                     </div>
-                    <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
-                        Delete Your Vibemate Account
+                    <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight">
+                        Account Deletion Request
                     </h1>
-                    <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-                        We value your privacy. If you wish to permanently remove your account and data from the Vibemate platform, please follow the instructions below.
+                    <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+                        If you wish to remove your account and data from StudentSpark, you can do so directly within the application or by contacting our support team.
                     </p>
                 </div>
 
@@ -38,109 +38,121 @@ export default function AccountDeletionPage() {
                         <div className="p-1 bg-gradient-to-r from-red-500 to-orange-500"></div>
                         <div className="p-6 sm:p-8">
                             <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-                                How to Request Deletion
+                                How to Delete Your Account
                             </h2>
 
                             <div className="space-y-6">
-                                <div className="flex gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">1</div>
+                                <div className="flex gap-4 group">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-blue-600 group-hover:text-white transition-colors text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">1</div>
                                     <div>
-                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Log in to the App</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Open the Vibemate mobile application and sign in to your account.</p>
+                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Open the App</h3>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Launch the mobile application on your device and log in to your account.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">2</div>
+                                <div className="flex gap-4 group">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-blue-600 group-hover:text-white transition-colors text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">2</div>
                                     <div>
                                         <h3 className="font-medium text-slate-900 dark:text-white mb-1">Navigate to Settings</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Tap on your Profile icon or Menu, then select <strong>Settings & Privacy</strong>.</p>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Tap on the Menu/Profile icon, then select <strong>Settings & Privacy</strong>.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">3</div>
+                                <div className="flex gap-4 group">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-red-600 group-hover:text-white transition-colors text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">3</div>
                                     <div>
-                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Initiate Deletion</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Scroll to the "Account Management" section and tap <strong>Delete Account</strong>.</p>
+                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Select "Delete Account"</h3>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Find the "Account Management" or "Data Control" section and tap the <strong>Delete Account</strong> option.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">4</div>
+                                <div className="flex gap-4 group">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-green-600 group-hover:text-white transition-colors text-slate-900 dark:text-white flex items-center justify-center font-bold border border-slate-200 dark:border-slate-600">4</div>
                                     <div>
-                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Confirm</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 text-sm">Follow the on-screen prompts to confirm your identity and final deletion request.</p>
+                                        <h3 className="font-medium text-slate-900 dark:text-white mb-1">Confirm Deletion</h3>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">You will be asked to confirm your choice. Once confirmed, your account will be scheduled for deletion.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700/50">
-                                <p className="text-sm text-slate-500 dark:text-slate-400 flex items-start gap-2">
-                                    <Mail className="w-4 h-4 mt-0.5 text-blue-500" />
+                                <p className="text-sm text-slate-500 dark:text-slate-400 flex items-start gap-3 bg-slate-50 dark:bg-slate-800/50 p-4 rounded-lg">
+                                    <Mail className="w-5 h-5 mt-0.5 text-blue-500 flex-shrink-0" />
                                     <span>
-                                        Can't access the app? You can arguably submit a manual request by emailing <a href="mailto:support@berkeleybanking.com" className="text-blue-600 hover:underline font-medium">bsktechltd@gmail.com</a> with the subject "Vibemate Account Deletion Request".
+                                        If you are unable to access the app, you may request account deletion by emailing us at <a href="mailto:emmanuelekwunife58@gmail.com" className="text-blue-600 hover:text-blue-700 underline font-medium">emmanuelekwunife58@gmail.com</a>. Please include your registered email address and "Account Deletion Request" in the subject line.
                                     </span>
                                 </p>
                             </div>
                         </div>
                     </section>
 
-                    {/* Data Info Grid */}
+                    {/* Data Handling Grid */}
                     <div className="grid md:grid-cols-2 gap-6">
-                        {/* Deleted Data */}
+                        {/* What Happens to Data */}
                         <section className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
                             <div className="flex items-center gap-2 mb-4">
                                 <Database className="w-5 h-5 text-red-500" />
-                                <h2 className="font-bold text-slate-900 dark:text-white">Data Completely Deleted</h2>
+                                <h2 className="font-bold text-slate-900 dark:text-white">Data Deleted</h2>
                             </div>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                                The following data will be permanently removed from our active databases:
+                            </p>
                             <ul className="space-y-3">
                                 {[
-                                    "Personal Profile (Name, Address, Email, Phone)",
-                                    "Authentication Credentials & Passwords",
-                                    "Linked Payment Methods (Tokenized)",
-                                    "App Preferences & Settings",
-                                    "Marketing Data & Cookies"
+                                    "Account Profile & Identity Information",
+                                    "Email Address & Credentials",
+                                    "User-Generated Content & Preferences",
+                                    "Linked Social Media Data",
+                                    "Device Identifiers & App Usage History"
                                 ].map((item, i) => (
                                     <li key={i} className="flex gap-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <span className="text-red-500">•</span>
+                                        <CheckCircle className="w-4 h-4 text-red-500 mt-0.5" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
                         </section>
 
-                        {/* Retained Data */}
+                        {/* Retention Policy */}
                         <section className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
                             <div className="flex items-center gap-2 mb-4">
                                 <Clock className="w-5 h-5 text-amber-500" />
-                                <h2 className="font-bold text-slate-900 dark:text-white">Data Retained & Why</h2>
+                                <h2 className="font-bold text-slate-900 dark:text-white">Retention Policy</h2>
                             </div>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                                We practice data minimization. However, some data may be retained for a limited period due to legal or technical reasons:
+                            </p>
                             <ul className="space-y-3">
-                                {[
-                                    "Transaction History (Required by Banking Law)",
-                                    "Loan & Credit Records (Financial Regulations)",
-                                    "KYC/Identity Documents (Anti-Money Laundering)",
-                                    "Fraud Prevention Logs (Security Audits)"
-                                ].map((item, i) => (
-                                    <li key={i} className="flex gap-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <span className="text-amber-500">•</span>
-                                        {item}
-                                    </li>
-                                ))}
+                                <li className="flex gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5" />
+                                    <span>
+                                        <strong>Transaction Records:</strong> Retained for up to 7 years as required by financial regulations and tax laws (if applicable).
+                                    </span>
+                                </li>
+                                <li className="flex gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5" />
+                                    <span>
+                                        <strong>Security Logs:</strong> Technical logs may be kept for up to 90 days for detailed security auditing and fraud prevention.
+                                    </span>
+                                </li>
+                                <li className="flex gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                    <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5" />
+                                    <span>
+                                        <strong>Backups:</strong> Deleted data may remain in encrypted backups for up to 30 days before being completely overwritten.
+                                    </span>
+                                </li>
                             </ul>
                         </section>
                     </div>
 
-                    {/* Retention Policy Note */}
-                    <section className="bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30 rounded-lg p-5">
-                        <h3 className="text-amber-900 dark:text-amber-100 font-semibold mb-2 text-sm uppercase tracking-wider">Additional Retention Period</h3>
-                        <p className="text-sm text-amber-800 dark:text-amber-200 leading-relaxed">
-                            By law, financial institutions are required to retain transaction records and identity verification documents for a minimum of <strong>7 years</strong>. This data cannot be deleted upon request until the statutory retention period has expired. After this period, all retained data is securely archived or anonymized in accordance with our data destruction policy.
+                    {/* Final Notice */}
+                    <section className="bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-lg p-5 text-center">
+                        <p className="text-sm text-slate-600 dark:text-slate-400">
+                            Have questions about your data? Contact our Privacy Team at <a href="mailto:emmanuelekwunife58@gmail.com" className="text-blue-600 hover:underline">emmanuelekwunife58@gmail.com</a>.
                         </p>
                     </section>
                 </div>
             </main>
 
-            <footer className="py-8 text-center text-slate-500 dark:text-slate-500 text-sm">
-                <p>&copy; {new Date().getFullYear()} Vibemate. All rights reserved.</p>
+            <footer className="py-8 text-center text-slate-500 dark:text-slate-500 text-sm border-t border-slate-200 dark:border-slate-800 mt-auto bg-white dark:bg-slate-900">
+                <p>&copy; {new Date().getFullYear()} BSK. All rights reserved.</p>
             </footer>
         </div>
     );
