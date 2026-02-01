@@ -142,6 +142,43 @@ export default function AccountDeletionPage() {
                         </section>
                     </div>
 
+                    {/* ===== GOOGLE PLAY IDENTITY SECTION (REQUIRED) ===== */}
+                    <section className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 mt-8">
+                        <h2 className="font-bold text-slate-900 dark:text-white mb-3">
+                            App Identity & Ownership
+                        </h2>
+
+                        <p className="text-sm text-slate-600 dark:text-slate-400 mb-3">
+                            This is the official Google Play data deletion page for the application listed below.
+                            The information here matches the app identity on the Google Play Store.
+                        </p>
+
+                        <ul className="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                            <li>
+                                <strong>App Name:</strong> StudentSpark
+                            </li>
+
+                            <li>
+                                <strong>Developer Name:</strong> bsktechltd
+                            </li>
+
+                            <li>
+                                <strong>Google Play Package:</strong> com.john_1050.student_assistant
+                            </li>
+
+                            <li>
+                                <strong>Developer Email:</strong> emmanuelekwunife58@gmail.com
+                            </li>
+                        </ul>
+
+                        <p className="text-sm text-slate-600 dark:text-slate-400 mt-4">
+                            This page serves as the official account and data deletion mechanism
+                            for the <strong>StudentSpark</strong> mobile application published on Google Play.
+                        </p>
+                    </section>
+                    {/* ===== END GOOGLE PLAY SECTION ===== */}
+
+
                     {/* Final Notice */}
                     <section className="bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-lg p-5 text-center">
                         <p className="text-sm text-slate-600 dark:text-slate-400">
@@ -152,7 +189,7 @@ export default function AccountDeletionPage() {
             </main>
 
             <footer className="py-8 text-center text-slate-500 dark:text-slate-500 text-sm border-t border-slate-200 dark:border-slate-800 mt-auto bg-white dark:bg-slate-900">
-                <p>&copy; {new Date().getFullYear()} BSK. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} bsktechltd. All rights reserved.</p>
             </footer>
         </div>
     );
